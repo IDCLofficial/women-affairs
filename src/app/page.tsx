@@ -1,103 +1,76 @@
+import AboutMandateSection from "@/components/AboutMandateSection";
+import HeroSection from "@/components/HeroSection";
+import CommissionerSection from "@/components/CommissionerSection";
 import Image from "next/image";
+import QuickLinksSection from "@/components/QuickLinksSection";
+import SkillUpSection from "@/components/SkillUpSection";
+import LatestNewsSection from "@/components/LatestNewsSection";
+import Stats from "@/components/Stats";
+import FeaturedPartners from "@/components/FeaturedPartners";
+import CTASection from "@/components/CTASection";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+     
+      {/* hero section */}
+      <HeroSection
+        backgroundImage="/images/Homehero.jpg"
+        overlayText="Imo State Ministry of Women Affairs and Social Welfare"
+        heading="Empowering Women. "
+        subheading="Promoting Social Welfare."
+        description="Empowering women, advancing social welfare, and supporting Imo citizens — through inclusive policies, advocacy, and community programs."
+      />
+      {/* About Mandate Section */}
+      <AboutMandateSection
+        label="ABOUT US"
+        title="Our Mandate —"
+        subheading="Ministry of Women Affairs and Social Welfare"
+        description="Welcome to the Imo State Ministry of Women Affairs and Social Welfare
+As a key driver of social transformation, our Ministry plays a critical role in positioning Imo State as a hub for women empowerment and social welfare. In a time of post-oil diversification, we are committed to fostering sustainable development, attracting investment, and creating opportunities through a robust policy framework and forward-thinking leadership.
+
+Established through the restructuring of former women affairs, social welfare, and community development departments, this Ministry brings focus to the vast opportunities in Imo’s social landscape—empowerment, protection, and more.
+"
+        buttonText="Discover More"
+        image1="/images/womenfirst.jpg"
+        image2="/images/women7.jpg"
+      />
+
+      {/* Commissioner Section */}
+      <CommissionerSection
+        imageSrc="/images/commisioner.png"
+        imageAlt="Honourable Lady Nkechinyere Ugwu, Minister of Women Affairs and Social Welfare in Imo State"
+        title="About The Commissioner"
+        bio="Honourable Lady Nkechinyere Ugwu hails from Ideato South Local Government Area of Imo State, Nigeria, and is a distinguished figure in the realm of public service, particularly in areas concerning gender equality and social justice. With years of dedicated service, she has established herself as a powerful advocate for women’s empowerment, child protection, and the upliftment of vulnerable populations across the state. Her work spans grassroots initiatives aimed at equipping women with vocational skills, creating access to financial support, and advocating for their rightful inclusion in political and economic spaces."
+        details="Hon. Ugwu also plays a pivotal role in shaping and implementing state-level gender and social welfare policies, collaborating with local communities, NGOs, and international development partners to deliver sustainable impact. Beyond her accomplishments in social welfare, she has courageously tackled complex and often contentious issues surrounding public asset management, where she has called for transparency, accountability, and responsible governance. Her leadership reflects a commitment not only to equity and empowerment but also to ensuring that government resources are managed efficiently for the benefit of all citizens—especially the marginalized."
+        buttonText="Our Team"
+        buttonHref="/about/team"
+      />
+      <div className="bg-white">
+
+      {/* Skill Up Section */}
+      <SkillUpSection />
+      {/* Quick Links Section */}
+      <QuickLinksSection />
+      {/* Latest News Section */}
+      <LatestNewsSection />
+      </div>
+
+      {/* Stats Section */}
+      <Stats />
+      {/* Featured Partners Section */}
+      <FeaturedPartners />
+      {/* CTASection */}
+      <CTASection
+        heading="Join Us in Empowering Women and Promoting Social Justice"
+        subtext="Be part of our mission to create an inclusive, equitable, and supportive Imo State for all women, children, and vulnerable groups."
+        buttonLabel="Contact Us"
+        buttonHref="/contact-us"
+      />
+      {/* Footer */}
+      <Footer />
+    </>
   );
 }
