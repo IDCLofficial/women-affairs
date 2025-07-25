@@ -52,35 +52,34 @@ export default function AboutMandateSection({
         {/* BOTTOM SECTION */}
         <AnimatedSection delay={0.3} yOffset={100}>
           <div className="flex gap-4">
-            <div className="relative w-full md:w-[680px] h-[260px] rounded-lg overflow-hidden">
+            <div className="relative w-full md:w-[680px] h-[260px] rounded-lg overflow-hidden group transition-all duration-300">
               <Image
                 src={image1}
                 alt="Mandate Image 1"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl"
                 priority
               />
-               <span className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-700 drop-shadow-md animate-fadeIn"></span>
-              <div className="absolute inset-0 bg-black/60   flex items-end justify-center">
+              <span className="text-white text-xl font-semibold opacity-0 group-hover:opacity-100 transition duration-700 drop-shadow-md animate-fadeIn"></span>
+              <div className="absolute inset-0 bg-black/60 flex items-end justify-center transition-all duration-300 group-hover:bg-black/40">
                 <span className="text-gray-200 tracking-wide lg:tracking-[.75rem] text-xl font-semibold w-full px-4 pb-4">
                 Supporting Women’s Rights</span>
               </div>
             </div>
-            <div className="relative w-[340px] h-[260px] rounded-lg overflow-hidden">
+            <div className="relative w-[340px] h-[260px] rounded-lg overflow-hidden group transition-all duration-300">
               <Image
                 src={image2}
                 alt="Mandate Image 2"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-300 group-hover:scale-105 group-hover:shadow-2xl"
                 priority
               />
-              <div className="absolute inset-0 bg-black/60 flex items-end justify-center">
+              <div className="absolute inset-0 bg-black/60 flex items-end justify-center transition-all duration-300 group-hover:bg-black/40">
               <span className="text-gray-200 tracking-wide lg:tracking-[.75rem] text-xl font-semibold w-full px-4 pb-4">
               Empowering Women
               </span>
               </div>
             </div>
-            
           </div>
         </AnimatedSection>
       </div>
