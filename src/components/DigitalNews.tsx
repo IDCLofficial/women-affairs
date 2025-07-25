@@ -1,33 +1,28 @@
-import Image from "next/image";
+import React from "react";
+import AnimatedSection from "./AnimatedSection";
 
-export default function StrategicGoalsSection() {
+export default function MissionVisionCard() {
   return (
-    <section className="w-full py-16 bg-white flex flex-col lg:flex-row items-center gap-10 px-6 lg:px-20 border-t">
-      <div className="flex-1 flex flex-col gap-6">
-        <h2 className="text-3xl lg:text-4xl font-bold">Ministry of Women Affairs and Social Justice</h2>
-        <p className="text-gray-700">
-          Empowering women, protecting children, and promoting social welfare through advocacy, education, and community-driven initiatives, fostering a society where every individual can thrive and reach their full potential.
-        </p>
-        <div className="text-gray-700 space-y-3">
-          <p><b>Vision Statement:</b> A society where women are empowered to lead, children are safe and nurtured, and communities are resilient and prosperous, where every individual has the opportunity to grow, contribute, and flourish.</p>
-          <p><b>Policy Priorities / Strategic Goals:</b></p>
-          <ul className="list-disc ml-6">
-            <li>Protecting vulnerable groups</li>
-            <li>Child welfare</li>
-            <li>Promoting gender equality</li>
-            <li>Collaboration and cooperation</li>
-          </ul>
-          <p><b>Ongoing Flagship Projects / Initiatives:</b></p>
-          <ul className="list-disc ml-6">
-            <li>The just concluded zonal training for Imo State President Generals on gender based violence.</li>
-          </ul>
+    <section className="w-full flex justify-center py-16 bg-[#f7f9fa]">
+      <AnimatedSection>
+      <div className="bg-white rounded-3xl shadow-xl p-10 w-[80vw] flex flex-col gap-8 items-center">
+        <h2 className="text-3xl font-bold text-green-700 mb-2 text-center">Ministry of Women Affairs and Social Justice</h2>
+        <div className="w-full flex flex-col md:flex-row gap-6">
+          <div className="bg-green-50 rounded-xl p-6 shadow-sm w-full">
+            <h3 className="text-xl font-semibold text-green-800 mb-2">Mission Statement</h3>
+            <p className="text-gray-700 text-base">
+              Empowering women, protecting children, and promoting social welfare through advocacy, education, and community-driven initiatives, fostering a society where every individual can thrive and reach their full potential.
+            </p>
+          </div>
+          <div className="bg-green-50 rounded-xl p-6 shadow-sm w-full">
+            <h3 className="text-xl font-semibold text-green-800 mb-2">Vision Statement</h3>
+            <p className="text-gray-700 text-base">
+              A society where women are empowered to lead, children are safe and nurtured, and communities are resilient and prosperous, where every individual has the opportunity to grow, contribute, and flourish.
+            </p>
+          </div>
         </div>
       </div>
-      <div className="flex-1 flex justify-center">
-        <div className="w-full max-w-md h-72 relative rounded-lg overflow-hidden">
-          <Image src="/images/commissioner2.png" alt="Women Affairs Initiatives" fill className="object-cover" />
-        </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 } 
