@@ -14,7 +14,7 @@ const ContactFormSection = () => {
   };
 
   return (
-    <div className="bg-amber-900 text-white p-8 rounded shadow-lg w-full max-w-xl mx-auto">
+    <div className="bg-amber-900 text-white p-8 rounded shadow-lg w-full max-w-xl mx-auto ">
       <h2 className="text-2xl font-bold mb-2">TALK WITH US HERE</h2>
       <p className="mb-6 text-gray-200 text-sm">We are here to help you with any questions you may have.</p>
       <form className="space-y-4" onSubmit={handleSubmit}>

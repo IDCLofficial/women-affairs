@@ -4,13 +4,13 @@ import NewsGrid from "./NewsGrid";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import SecondTopHero from "@/components/SecondTopHero";
+import { TopHero } from "@/components/TopHero";
 
 export default function NewsPage() {
   return (
     <div className="bg-white">
-      <SecondTopHero
-      headingText="Empowering Imo’s Industry, Mines, and Solid Minerals"
-      />
+      {/* top hero */}
+      <TopHero ministryName="Empowering Imo’s Women, Children, and Communities for a Just and Inclusive Imo" titleLabel="News" />
       <NewsSearchBar />
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 px-4 pb-16">
         <NewsSidebar />

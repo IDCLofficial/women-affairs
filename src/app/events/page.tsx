@@ -2,13 +2,13 @@ import SecondTopHero from "@/components/SecondTopHero";
 import EventsListSection from "./EventsListSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import { TopHero } from "@/components/TopHero";
 
 export default function EventsPage() {
   return (
     <div className="bg-white">
-      <SecondTopHero
-      headingText="Events & Innovation for Empowering Women, Children, and Communities"
-      />
+      {/* top hero */}
+      <TopHero ministryName="Empowering Women, Children, and Communities for a Just and Inclusive Imo" titleLabel="Events" />
       <EventsListSection />
       <CTASection
           heading="Join Us in Empowering Women and Promoting Social Justice"

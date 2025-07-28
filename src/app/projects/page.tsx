@@ -2,13 +2,15 @@ import CTASection from "@/components/CTASection";
 import DigitalAgendaSection from "@/components/DigitalNews";
 import Footer from "@/components/Footer";
 import SecondTopHero from "@/components/SecondTopHero";
+import { TopHero } from "@/components/TopHero";
 import OngoingProjects from "@/components/projects/Projects";
 
 export default function Projects() {
     return (
         <div>
-            {/* SecondTop Hero */}
-            <SecondTopHero headingText="Empowering Women, Children, and Communities for a Just and Inclusive Imo" />
+            {/* top hero */}
+            <TopHero ministryName="Empowering Women, Children, and Communities for a Just and Inclusive Imo" titleLabel="Projects" />
+          
             {/* SkillUp Project */}
             <OngoingProjects />
             {/* Digital section */}
