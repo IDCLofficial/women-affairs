@@ -1,6 +1,5 @@
 import { SectionHero } from "@/components/SectionHero";
 import { ObjectivesSection } from "@/app/about/ObjectivesSection";
-import CommissionerSection from "@/components/CommissionerSection";
 import { StructuresSection } from "@/app/about/StructuresSection";
 import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";
@@ -24,15 +23,7 @@ export default function AboutUs() {
                 altText="Our Story - Imo State Ministry of Women Affairs and Social Welfare conference event"
             />
             {/* Commissioner Section */}
-            <CommissionerSection
-                imageSrc="/images/commisioner.png"
-                imageAlt="Hon. Commissioner Lady Nkechi Ugwu"
-                title="Hon. Commissioner Lady Nkechi Ugwu"
-                bio="As Commissioner for Women Affairs and Social Justice, Lady Nkechi Ugwu is a passionate advocate for gender equality, women's empowerment, and the protection of vulnerable groups. Her leadership has advanced impactful programs supporting women, children, and persons with disabilities across Imo State."
-                details="Lady Ugwu's vision is to foster an inclusive society where every woman and child can thrive, free from discrimination and violence. She works closely with local and international partners to drive social reforms, promote education, and ensure access to essential services for all."
-                buttonText="Meet the Team"
-                buttonHref="/about/team"
-            />
+           
             <MissionVisionCard />
             <TeamPage />
             {/* Objectives Section */}

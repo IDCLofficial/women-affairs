@@ -47,8 +47,8 @@ export const ObjectivesSection = () => {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {objectives.map((objective, index) => (
-                            <AnimatedSection2 delay={0.2}>
-                            <div key={index} className="bg-white p-6 rounded-lg border border-gray-200 shadow-md text-center">
+                            <AnimatedSection2 key={index} delay={0.2}>
+                            <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-md text-center">
                                 <h3 className="font-medium text-[22px] mb-3">
                                     {objective.title}
                                 </h3>

@@ -44,8 +44,7 @@ Established through the restructuring of former women affairs, social welfare, a
         title="About The Commissioner"
         bio="Honourable Lady Nkechinyere Ugwu hails from Ideato South Local Government Area of Imo State, Nigeria, and is a distinguished figure in the realm of public service, particularly in areas concerning gender equality and social justice. With years of dedicated service, she has established herself as a powerful advocate for women’s empowerment, child protection, and the upliftment of vulnerable populations across the state. Her work spans grassroots initiatives aimed at equipping women with vocational skills, creating access to financial support, and advocating for their rightful inclusion in political and economic spaces."
         details="Hon. Ugwu also plays a pivotal role in shaping and implementing state-level gender and social welfare policies, collaborating with local communities, NGOs, and international development partners to deliver sustainable impact. Beyond her accomplishments in social welfare, she has courageously tackled complex and often contentious issues surrounding public asset management, where she has called for transparency, accountability, and responsible governance. Her leadership reflects a commitment not only to equity and empowerment but also to ensuring that government resources are managed efficiently for the benefit of all citizens—especially the marginalized."
-        buttonText="Our Team"
-        buttonHref="/about/team"
+        
       />
       <div className="bg-white">
 
