@@ -29,8 +29,8 @@ export default function AnimatedSection({
   }, []);
 
   const initialAnim = isMobile
-    ? { opacity: 0, y: offset }  // Slide in horizontally on mobile
-    : { opacity: 0, x: offset }; // Slide in vertically on desktop
+    ? { opacity: 0, y: offset }  
+    : { opacity: 0, x: offset }; 
 
   const finalAnim = { opacity: 1, x: 0, y: 0 };
 

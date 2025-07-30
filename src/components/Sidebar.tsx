@@ -20,7 +20,7 @@ export default function Sidebar({ open, onClose }: SidebarProps) {
         aria-hidden={!open}
       >
         <button
-          className="absolute top-4 right-4 text-gray-700"
+          className="absolute top-4 right-4 text-gray-700 cursor-pointer"
           aria-label="Close menu"
           onClick={onClose}
         >

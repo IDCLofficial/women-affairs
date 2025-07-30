@@ -1,4 +1,3 @@
-import SecondTopHero from "@/components/SecondTopHero";
 import EventsListSection from "./EventsListSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";

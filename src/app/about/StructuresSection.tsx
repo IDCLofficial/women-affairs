@@ -1,3 +1,4 @@
+import AnimatedSection from "@/components/AnimatedSection2";
 import Image from "next/image";
 
 interface StructuresSectionProps {
@@ -56,7 +57,7 @@ export const StructuresSection = ({imgSrc}: StructuresSectionProps) => {
 
           {/* Department Cards Grid */}
           <div className="flex flex-col gap-2 w-full">
-              <div className="flex flex-row gap-2 w-full justify-between">
+              <div className="flex flex-col md:flex-row gap-2 w-full justify-between">
                   {departments.row1.map((department, index) => (
                       <div key={index} className="flex-1 bg-white p-8 shadow-md border border-gray-200">
                           <h3 className="font-bold text-[22px] text-dark-primary mb-3">
@@ -68,15 +69,17 @@ export const StructuresSection = ({imgSrc}: StructuresSectionProps) => {
                       </div>
                   ))}
               </div>
-              <div className="flex flex-row w-full gap-2">
+              <div className="flex flex-col md:flex-row w-full gap-2">
                   {departments.row2.map((department, index) => (
                       <div key={index} className="flex-1 bg-white p-8 shadow-md border border-gray-200">
+                          <AnimatedSection>
                           <h3 className="font-bold text-[22px] text-dark-primary mb-3">
                               {department?.title}
                           </h3>
                           <p className="text-dark-secondary-body text-[16px]">
                               {department?.description}
                           </p>
+                          </AnimatedSection>
                       </div>
                   ))}
               </div>

@@ -1,4 +1,4 @@
-import AnimatedSection2 from "./AnimatedSection2";
+import AnimatedSection2 from "../../components/AnimatedSection2";
 
 export const ObjectivesSection = () => {
     const objectives = [

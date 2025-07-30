@@ -3,7 +3,6 @@ import NewsSearchBar from "./NewsSearchBar";
 import NewsGrid from "./NewsGrid";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
-import SecondTopHero from "@/components/SecondTopHero";
 import { TopHero } from "@/components/TopHero";
 
 export default function NewsPage() {

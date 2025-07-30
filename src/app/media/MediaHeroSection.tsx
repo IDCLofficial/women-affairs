@@ -1,5 +1,4 @@
 import React from "react";
-import MediaSearchBar from "./MediaSearchBar";
 import AnimatedSection from "@/components/AnimatedSection";
 import { Title } from "@/components/Title";
 

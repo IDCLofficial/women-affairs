@@ -4,7 +4,7 @@ import Image from "next/image";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { useEffect, useState } from "react";
-import SecondTopHero from "@/components/SecondTopHero";
+import { TopHero } from "@/components/TopHero";
 
 const event = {
   title: "Imo State Gender-Based Violence (GBV) Awareness and Prevention Summit 2025",
@@ -75,9 +75,11 @@ function Countdown({ targetDate }: { targetDate: string }) {
 export default function EventDetailPage() {
   return (
     <>
-    <SecondTopHero
-      headingText="Events & Innovation for Empowering Women, Children, and Communities"
+    <TopHero
+      ministryName="Empowering Women, Children, and Communities for a Just and Inclusive Imo"
+      titleLabel="Events"
     />
+    
     <div className="bg-white">
       {/* Hero Title */}
       <section className="relative w-full h-[220px] flex items-center justify-center bg-gradient-to-br from-green-900/80 to-black/80">

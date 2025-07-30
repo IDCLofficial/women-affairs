@@ -1,9 +1,7 @@
 import CTASection from "@/components/CTASection";
-import DigitalAgendaSection from "@/components/DigitalNews";
 import Footer from "@/components/Footer";
-import SecondTopHero from "@/components/SecondTopHero";
 import { TopHero } from "@/components/TopHero";
-import OngoingProjects from "@/components/projects/Projects";
+import OngoingProjects from "@/app/projects/Projects";
 
 export default function Projects() {
     return (

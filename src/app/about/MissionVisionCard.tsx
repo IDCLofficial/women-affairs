@@ -1,5 +1,5 @@
 import React from "react";
-import AnimatedSection from "./AnimatedSection";
+import AnimatedSection from "../../components/AnimatedSection";
 
 export default function MissionVisionCard() {
   return (

@@ -1,11 +1,12 @@
 import { SectionHero } from "@/components/SectionHero";
-import { ObjectivesSection } from "@/components/ObjectivesSection";
+import { ObjectivesSection } from "@/app/about/ObjectivesSection";
 import CommissionerSection from "@/components/CommissionerSection";
-import { StructuresSection } from "@/components/StructuresSection";
+import { StructuresSection } from "@/app/about/StructuresSection";
 import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";
 import { TopHero } from "@/components/TopHero";
-import MissionVisionCard from "@/components/DigitalNews";
+import MissionVisionCard from "@/app/about/MissionVisionCard";
+import TeamPage from "./Team";
 
 export default function AboutUs() {
     return (
@@ -33,6 +34,7 @@ export default function AboutUs() {
                 buttonHref="/about/team"
             />
             <MissionVisionCard />
+            <TeamPage />
             {/* Objectives Section */}
             <ObjectivesSection />
             {/* Structures Section */}
