@@ -31,7 +31,7 @@ export default function TeamPage() {
             <div className="relative w-40 h-40 rounded-full overflow-hidden mb-4">
               <Image src={member.image} alt={member.name} fill className="object-cover" />
             </div>
-            <h2 className="text-xl font-semibold text-gray-900 mb-1">{member.name}</h2>
+            <h2 className="text-xl text-center font-semibold text-gray-900 mb-1">{member.name}</h2>
             <p className="text-green-700 font-medium mb-2">{member.role}</p>
             <p className="text-gray-700 text-sm mb-2 text-center">{member.bio}</p>
           </div>
