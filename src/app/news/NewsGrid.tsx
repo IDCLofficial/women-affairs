@@ -10,18 +10,6 @@ function slugify(text: string) {
 
 const newsList = [
   {
-    title: "Ministry Reunites Abandoned Children with Families",
-    description: "The Imo State Ministry of Women Affairs recently reunited three abandoned children with their families after they were found in a Bayelsa hotel. The reunification was praised by the Permanent Secretary.",
-    date: "Late June 2025",
-    image: "/images/commisioner.png",
-  },
-  {
-    title: "PWDs Call for Disability Commission as Ministry Backs the Move",
-    description: "Advocates for Persons With Disabilities (PWDs) have called on the Ministry to establish a disability commission, and the Ministry fully supported the initiative. PWD groups praised the Ministry’s commitment.",
-    date: "19th July 2025",
-    image: "/images/twowomen.jpg",
-  },
-  {
     title: "Minister, First Lady, and UN Women Lead GBV Training for Community Leaders",
     description: "The Ministry, alongside Imo First Lady and UN Women, conducted a 3‑day zonal training for President‑Generals in Owerri, Orlu and Okigwe on preventing Gender‑Based Violence at the grassroots level.",
     date: "10th July 2025",

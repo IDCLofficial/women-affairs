@@ -1,84 +1,94 @@
 import Image from "next/image";
 import NewsHeroSection from "./NewsHeroSection";
 import NewsBodySection from "./NewsBodySection";
+import Footer from "@/components/Footer";
 
 const latestNews = [
   {
-    title: "IMO STATE MINISTRY OF WOMEN AFFAIRS LAUNCHES WOMEN EMPOWERMENT PROGRAM",
+    title: "Minister, First Lady, and UN Women Lead GBV Training for Community Leaders",
     date: "MAY 15, 2025",
     img: "/images/women1.jpg",
   },
-  {
-    title: "GENDER EQUALITY CAMPAIGN KICKS OFF IN IMO STATE",
-    date: "APRIL 28, 2025",
-    img: "/images/women2.jpg",
-  },
-  {
-    title: "SUPPORT INITIATIVE FOR ABUSED WOMEN AND GIRLS ANNOUNCED",
-    date: "APRIL 10, 2025",
-    img: "/images/women3.jpg",
-  },
+ 
 ];
 
 export default function NewsDetailPage() {
   return (
     <div className="min-h-screen bg-[#F7F9FA]">
       {/* Section 1: Hero + Body */}
-      <section className="relative w-full pb-[180px]"> {/* pb-[180px] ensures body does not overlap next section */}
-        <NewsHeroSection/>
+      <section className="relative w-full pb-[180px]">
+        <NewsHeroSection />
         <NewsBodySection>
           {/* Title & Meta */}
           <div className="relative z-10 w-full flex justify-center pb-2">
             <div className="w-full max-w-3xl rounded-xl overflow-hidden shadow-lg">
-              <Image src={'/images/women1.jpg'} alt="News Hero" width={900} height={400} className="object-cover w-full h-[260px] md:h-[320px]" />
+              <Image
+                src="/images/firstladymain.jpg"
+                alt="First Lady GBV Training"
+                width={900}
+                height={400}
+                className="object-cover w-full h-[260px] md:h-[320px]"
+              />
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-2xl md:text-3xl font-bold mb-2">Imo State Ministry of Women Affairs Champions Empowerment and Gender Equality</h1>
+            <h1 className="text-2xl md:text-3xl font-bold mb-2">
+              Minister, First Lady, and UN Women Lead GBV Training for Community Leaders
+            </h1>
+            <p className="text-gray-500 text-sm">10th July 2025</p>
           </div>
 
           {/* Main Content */}
           <div>
             <p className="text-gray-700 mb-6">
-              The Imo State Ministry of Women Affairs is at the forefront of promoting the rights, welfare, and empowerment of women and girls across the state. Through innovative programs and advocacy, the ministry is creating opportunities for women to thrive, lead, and contribute meaningfully to society.
+              The Ministry of Women Affairs, in collaboration with the Imo State First Lady and UN Women, recently organized a 3-day zonal training on Gender-Based Violence (GBV) prevention for community leaders across the state.
             </p>
             <p className="text-gray-700 mb-6">
-              Under the leadership of the Hon. Commissioner, the Ministry has launched several initiatives focused on economic empowerment, gender equality, and protection of vulnerable groups. These efforts include skills acquisition programs, support for women entrepreneurs, and campaigns to end gender-based violence in Imo State.
+              The training brought together President-Generals from Owerri, Orlu, and Okigwe zones to empower them with knowledge and strategies for addressing GBV at the grassroots level. The initiative is part of ongoing efforts to strengthen community-based solutions for women's safety and inclusion.
             </p>
             <div className="w-full flex justify-center my-8">
               <div className="w-full max-w-md rounded-xl overflow-hidden">
-                <Image src="/images/women2.jpg" alt="Empowerment Initiative" width={600} height={300} className="object-cover w-full h-64" />
+                <Image
+                  src="/images/women3.jpg"
+                  alt="Training Session"
+                  width={600}
+                  height={300}
+                  className="object-cover w-full h-64"
+                />
               </div>
             </div>
             <div className="flex flex-col md:flex-row gap-8">
               <div className="flex-1">
-                <h2 className="font-semibold mb-2">Key Achievements and Focus Areas:</h2>
+                <h2 className="font-semibold mb-2">Training Highlights:</h2>
                 <ul className="list-disc ml-6 text-gray-700 mb-6">
-                  <li>Launch of the Women’s Empowerment Program benefiting over 5,000 women and girls.</li>
-                  <li>Establishment of the Transit Home for Abused Women and Girls, providing shelter and support.</li>
-                  <li>Implementation of gender equality campaigns and community sensitization workshops.</li>
-                  <li>Support for women-owned businesses through grants and training.</li>
-                  <li>Collaboration with local and international partners to advance women’s rights and social inclusion.</li>
+                  <li>Capacity building for over 100 community leaders across three zones.</li>
+                  <li>Workshops on identifying, reporting, and supporting GBV survivors.</li>
+                  <li>Collaborative sessions with legal, health, and social welfare professionals.</li>
+                  <li>Commitment from leaders to drive anti-GBV policies in their communities.</li>
+                  <li>Distribution of resource materials and awareness tools to participants.</li>
                 </ul>
               </div>
               <div className="flex-1 flex items-center">
                 <blockquote className="border-l-4 border-green-600 pl-4 italic text-gray-800">
-                  <span className="font-bold">“Empowering women and girls is the foundation for a just and prosperous society. The Ministry of Women Affairs is committed to building a future where every woman and girl in Imo State can achieve her full potential.”</span>
+                  <span className="font-bold">
+                    “Empowering grassroots leaders to tackle GBV is a crucial step in safeguarding the rights of women and girls in Imo State.”
+                  </span>
                 </blockquote>
               </div>
             </div>
             <p className="text-gray-700 mt-6">
-              The Ministry works closely with stakeholders to ensure that policies and programs are inclusive, sustainable, and impactful. By fostering partnerships and promoting advocacy, Imo State is setting a standard for women’s advancement and gender equity in Nigeria.
+              This initiative reflects the Ministry’s commitment to inclusive governance, community engagement, and long-term strategies for eradicating violence against women and girls.
             </p>
             <p className="text-gray-700 mt-2">
-              The Ministry remains dedicated to protecting the rights of women and girls, supporting survivors of abuse, and creating pathways for economic and social empowerment.
+              The First Lady emphasized the need for continued collaboration with traditional institutions and civil society to build safe, informed, and supportive communities.
             </p>
             <p className="text-gray-700 mt-2">
-              Together, we are building a brighter, more equitable future for all women and girls in Imo State.
+              Together with UN Women and state actors, the Ministry of Women Affairs is leading the charge for a safer and more just Imo State.
             </p>
           </div>
         </NewsBodySection>
       </section>
+
       {/* Section 2: Latest News */}
       <div className="w-full bg-[#181c23] py-10">
         <div className="max-w-6xl mx-auto px-4">
@@ -98,7 +108,9 @@ export default function NewsDetailPage() {
           </div>
         </div>
       </div>
-      {/* Section 3: Footer */}
+
+      {/* Section 3: Footer*/}
+      <Footer/>
     </div>
   );
-} 
+}

@@ -9,18 +9,6 @@ function slugify(text: string) {
 }
 const newsList = [
   {
-    title: "Commissioner Warns Staff Against Unprofessional Conduct",
-    date: "21st July 2025",
-    img: "/images/commisioner.png",
-    category: "Latest Updates",
-  },
-  {
-    title: "PWD Advocates Push for Disability Commission, Ministry Shows Support",
-    date: "19th July 2025",
-    img: "/images/twowomen.jpg",
-    category: "Policies",
-  },
-  {
     title: "3-Day GBV Prevention Training Led by Ministry in Collaboration with First Lady",
     date: "3rd July 2025",
     img: "/images/firstladymain.jpg",

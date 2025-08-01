@@ -67,9 +67,9 @@ export default function MediaPage() {
     <main className="min-h-screen w-full bg-[#F7F9FA] flex flex-col">
       <MediaHeroSection
         title="Media"
-        subtitle="Explore our gallery of photos, videos, and press releases showcasing our commitment to empowering women and girls"
+        subtitle="Explore our gallery"
         backgroundImage="/images/gradient.png"
-        searchBar={<MediaSearchBar placeholder="Search media..." onSearch={setSearch} />}
+        // searchBar={<MediaSearchBar placeholder="Search media..." onSearch={setSearch} />}
       />
       <section className="w-full max-w-7xl mx-auto py-12 px-4">
         <div className="mt-8">
