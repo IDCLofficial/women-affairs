@@ -10,7 +10,7 @@ import TeamPage from "./Team";
 export default function AboutUs() {
     return (
         <div className="h-screen bg-white">
-            
+
             {/* Top Hero */}
             <TopHero
                 ministryName="Ministry of Women Affairs and Social Welfare"
@@ -18,12 +18,12 @@ export default function AboutUs() {
             />
             {/* Section Hero */}
             <SectionHero
-                aboutText="The Ministry of Women Affairs and Social Welfare in Imo State serves as a vital engine for social transformation, especially as the state seeks to promote gender equality and social inclusion. While there's still room for growth and reform, the ministry represents a key opportunity for empowerment and sustainable development in Imo State.\nThe Ministry of Women Affairs and Social Welfare in Imo State is a government agency responsible for promoting women empowerment and regulating social welfare programs within the state. It is a strategic part of the state's development plan, especially considering Imo's diverse population.\nThe ministry was likely formed from a merger or restructuring of previous departments such as the Ministry of Women Affairs and sections of Social Welfare units.\nOver the years, successive governments in Imo State have recognized the importance of harnessing local resources and empowering women, children, and vulnerable groups, which are abundant in the region."
+                aboutText="The Ministry of Women Affairs and Social Welfare in Imo State serves as a vital engine for social transformation, especially as the state seeks to promote gender equality and social inclusion, and is also responsible for promoting women empowerment and regulating social welfare programs within the state. The ministry was formed from a merger or restructuring of previous departments such as the Ministry of Women Affairs and sections of Social Welfare units, and over the years, successive governments in Imo State have recognized the importance of harnessing local resources and empowering women, children, and vulnerable groups, which are abundant in the region aligning to the state's broader development goals."
                 imgSrc="/images/women8.jpg"
                 altText="Our Story - Imo State Ministry of Women Affairs and Social Welfare conference event"
             />
             {/* Commissioner Section */}
-           
+
             <MissionVisionCard />
             <TeamPage />
             {/* Objectives Section */}
