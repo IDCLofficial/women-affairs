@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import NewsSidebar from "./NewsSidebar";
 import NewsSearchBar from "./NewsSearchBar";
 import NewsGrid from "./NewsGrid";
@@ -9,10 +10,12 @@ export default function NewsPage() {
   return (
     <div className="bg-white">
       {/* top hero */}
-      <TopHero ministryName="Empowering Imo’s Women, Children, and Communities for a Just and Inclusive Imo" titleLabel="News" />
+      <TopHero ministryName="Empowering Imo&apos;s Women, Children, and Communities for a Just and Inclusive Imo" titleLabel="News" />
       <NewsSearchBar />
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-8 px-4 pb-16">
-        <NewsSidebar />
+        <Suspense fallback={<div className="w-full md:w-64 flex-shrink-0">Loading...</div>}>
+          <NewsSidebar />
+        </Suspense>
         <div className="flex-1">
           <NewsGrid />
         </div>

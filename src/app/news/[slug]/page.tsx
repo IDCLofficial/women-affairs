@@ -44,7 +44,7 @@ export default function NewsDetailPage() {
               The Ministry of Women Affairs, in collaboration with the Imo State First Lady and UN Women, recently organized a 3-day zonal training on Gender-Based Violence (GBV) prevention for community leaders across the state.
             </p>
             <p className="text-gray-700 mb-6">
-              The training brought together President-Generals from Owerri, Orlu, and Okigwe zones to empower them with knowledge and strategies for addressing GBV at the grassroots level. The initiative is part of ongoing efforts to strengthen community-based solutions for women's safety and inclusion.
+              The training brought together President-Generals from Owerri, Orlu, and Okigwe zones to empower them with knowledge and strategies for addressing GBV at the grassroots level. The initiative is part of ongoing efforts to strengthen community-based solutions for women&apos;s safety and inclusion.
             </p>
             <div className="w-full flex justify-center my-8">
               <div className="w-full max-w-md rounded-xl overflow-hidden">
@@ -71,13 +71,13 @@ export default function NewsDetailPage() {
               <div className="flex-1 flex items-center">
                 <blockquote className="border-l-4 border-green-600 pl-4 italic text-gray-800">
                   <span className="font-bold">
-                    “Empowering grassroots leaders to tackle GBV is a crucial step in safeguarding the rights of women and girls in Imo State.”
+                    &ldquo;Empowering grassroots leaders to tackle GBV is a crucial step in safeguarding the rights of women and girls in Imo State.&rdquo;
                   </span>
                 </blockquote>
               </div>
             </div>
             <p className="text-gray-700 mt-6">
-              This initiative reflects the Ministry’s commitment to inclusive governance, community engagement, and long-term strategies for eradicating violence against women and girls.
+              This initiative reflects the Ministry&apos;s commitment to inclusive governance, community engagement, and long-term strategies for eradicating violence against women and girls.
             </p>
             <p className="text-gray-700 mt-2">
               The First Lady emphasized the need for continued collaboration with traditional institutions and civil society to build safe, informed, and supportive communities.
