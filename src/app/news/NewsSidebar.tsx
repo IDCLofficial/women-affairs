@@ -1,5 +1,8 @@
+ "use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useSearchParams, useRouter } from "next/navigation";
 
 function slugify(text: string) {
   return text
@@ -7,13 +10,15 @@ function slugify(text: string) {
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/(^-|-$)+/g, '');
 }
+
 const newsList = [
   {
-    title: "3-Day GBV Prevention Training Led by Ministry in Collaboration with First Lady",
-    date: "3rd July 2025",
+    title: "Minister, First Lady, and UN Women Lead GBV Training for Community Leaders",
+    date: "10th July 2025",
     img: "/images/firstladymain.jpg",
     category: "Latest Updates",
   },
+  
 ];
 
 const categories = [
@@ -24,6 +29,20 @@ const categories = [
 const popularNews = newsList;
 
 export default function NewsSidebar() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const selectedCategory = searchParams.get('category');
+
+  const handleCategorySelect = (category: string) => {
+    if (category === selectedCategory) {
+      // If clicking the same category, clear the filter
+      router.push('/news');
+    } else {
+      // Set the new category
+      router.push(`/news?category=${encodeURIComponent(category)}`);
+    }
+  };
+
   return (
     <aside className="w-full md:w-64 flex-shrink-0">
       <div className="mb-8">
@@ -31,16 +50,32 @@ export default function NewsSidebar() {
         <ul className="space-y-2">
           {categories.map((cat, idx) => {
             const count = newsList.filter(news => news.category === cat.name).length;
+            const isSelected = selectedCategory === cat.name;
             return (
               <li key={idx} className="flex justify-between text-gray-700 text-sm">
-                <Link href={`/news/category/${slugify(cat.name)}`} className="flex justify-between w-full hover:text-green-700 transition-colors">
+                <button 
+                  onClick={() => handleCategorySelect(cat.name)}
+                  className={`flex justify-between w-full transition-colors ${
+                    isSelected 
+                      ? 'text-green-700 font-semibold' 
+                      : 'hover:text-green-700'
+                  }`}
+                >
                   <span>{cat.name}</span>
                   <span>{count}</span>
-                </Link>
+                </button>
               </li>
             );
           })}
         </ul>
+        {selectedCategory && (
+          <button 
+            onClick={() => router.push('/news')}
+            className="mt-4 text-sm text-gray-500 hover:text-green-700 transition-colors"
+          >
+            ← Show All News
+          </button>
+        )}
       </div>
       <div>
         <h3 className="font-bold text-lg mb-4">POPULAR NEWS</h3>
