@@ -7,7 +7,7 @@ const events = [
     location: "GOVERNMENT HOUSE, OWERRI",
     title: "Community Leaders Zonal GBV Training",
     description: "A 3‑day zonal training for President‑Generals and community leaders on preventing gender-based violence at the grassroots level.",
-    img: "/images/commisioner.png",
+    img: "/images/firstladymain.jpg",
     details: `Led by the Ministry alongside the Imo First Lady and UN Women, this workshop equipped community leaders in Owerri, Orlu, and Okigwe with tools to prevent GBV. It included interactive sessions, role-plays, and community action planning.`,
     dateString: "2025-10-29T09:00:00",
   },
@@ -93,9 +93,7 @@ export default function EventsListSection() {
                   <h3 className="text-xl font-bold mb-1">{event.title}</h3>
                   <p className="text-gray-700 text-sm mb-2">{event.description}</p>
                 </div>
-                <div className="flex justify-end md:justify-center">
-                  <Link href={`/events/${slugify(event.title)}`} className="border border-green-600 text-green-700 px-4 py-2 rounded font-semibold hover:bg-green-50 transition">More Information</Link>
-                </div>
+                
               </div>
             </div>
           ))}
