@@ -1,5 +1,6 @@
 import React from "react";
 import { AppLink } from "@/components/AppLink";
+import AnimatedSection from "./AnimatedSection";
 
 interface CTABlockProps {
   heading: string;
@@ -13,8 +14,10 @@ export default function CTABlock({ heading, subtext, buttonLabel, buttonHref }: 
     <section className="w-full bg-[#f7f9fa] py-10 px-4 md:px-18 rounded-[6px]">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="w-[94%] md:w-[50%]">
+          <AnimatedSection>
           <h2 className="text-xl md:text-3xl font-semibold mb-2">{heading}</h2>
           <p className="text-gray-600 text-sm md:text-base max-w-md">{subtext}</p>
+          </AnimatedSection>
         </div>
         <AppLink 
         className="bg-green-600 text-white px-8 py-3 rounded font-semibold" 

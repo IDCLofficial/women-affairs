@@ -2,12 +2,13 @@ import Image from "next/image";
 import NewsHeroSection from "./NewsHeroSection";
 import NewsBodySection from "./NewsBodySection";
 import Footer from "@/components/Footer";
+import Link from "next/link";
 
 const latestNews = [
   {
     title: "Minister, First Lady, and UN Women Lead GBV Training for Community Leaders",
     date: "MAY 15, 2025",
-    img: "/images/women1.jpg",
+    img: "/images/women4.png",
   },
  
 ];
@@ -18,12 +19,22 @@ export default function NewsDetailPage() {
       {/* Section 1: Hero + Body */}
       <section className="relative w-full pb-[180px]">
         <NewsHeroSection />
+        <div className="m-10 ">
+
+         <Link
+      href="/"
+      className="my-6 px-4 py-2 bg-green-700 hover:bg-green-800 text-white font-semibold rounded-lg shadow transition"
+    >
+      Go Back Home
+    </Link>
+        </div>
+
         <NewsBodySection>
           {/* Title & Meta */}
           <div className="relative z-10 w-full flex justify-center pb-2">
             <div className="w-full max-w-3xl rounded-xl overflow-hidden shadow-lg">
               <Image
-                src="/images/firstladymain.jpg"
+                src="/images/women4.png"
                 alt="First Lady GBV Training"
                 width={900}
                 height={400}
@@ -31,6 +42,7 @@ export default function NewsDetailPage() {
               />
             </div>
           </div>
+         
           <div className="text-center">
             <h1 className="text-2xl md:text-3xl font-bold mb-2">
               Minister, First Lady, and UN Women Lead GBV Training for Community Leaders

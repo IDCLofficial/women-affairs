@@ -6,32 +6,32 @@ import Image from "next/image";
 const departments = [
   {
     name: "Department of Women Affairs",
-    image: "/images/twowomen.jpg",
+    image: "/images/depart1.png",
     description: "Focuses on promoting women's economic, social, and political empowerment through skills acquisition, entrepreneurship development, and advocacy."
   },
   {
     name: "Department of Social Welfare",
-    image: "/images/women8.jpg",
+    image: "/images/depart2.png",
     description: "Provides support and services to vulnerable groups, including children, the aged, and persons with disabilities."
   },
   {
     name: "Department of Child Development",
-    image: "/images/women1.jpg",
+    image: "/images/wom1.png",
     description: "Works to protect children's rights and promote their welfare, including handling cases of child abuse and neglect."
   },
   {
     name: "Department of Administration and Finance",
-    image: "/images/women2.jpg",
+    image: "/images/depart3.png",
     description: "Handles administrative tasks, procurement, and financial management for the ministry."
   },
   {
     name: "Department of Planning, Research, and Statistics",
-    image: "/images/womenfirst.jpg",
+    image: "/images/women3.png",
     description: "Conducts research, planning, and data analysis to inform the ministry's programs and policies."
   },
   {
     name: "Department of Advocacy and Sensitization",
-    image: "/images/women9.jpg",
+    image: "/images/women4.png",
     description: "Promotes awareness and advocacy on issues affecting women and children, such as gender-based violence, female genital mutilation, and widowhood practices."
   }
 ];

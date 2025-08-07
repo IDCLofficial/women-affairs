@@ -1,25 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
+import AnimatedSection from "./AnimatedSection";
 
 const news = [
   {
-    title: "Imo Commissioner For Women Affairs and Social Welfare, Ibejiako, Vows To Reform Social Sector",
-    description: "Rt.Hon. Barr. Ernest Ibejiako, the Imo State Commissioner for Women Affairs and Social Welfare, has pledged to restore sanity and tackle the challenges facing the social sector. He made this commitment during a maiden stakeholders’ meeting with women and social workers in Imo State over the weekend.",
-    date: "30th May 2025",
-    image: "/images/commisioner.png",
+    title: "Nigerian Girl Guides Association Pays Courtesy Visit to Ministry, Presents New Executives",
+    description: "Last week, the Ministry received a delegation from the Nigerian Girl Guides Association, Imo State Chapter, who paid a courtesy visit to formally introduce the newly elected executive members of the association.Speaking during the visit, the newly elected State Commissioner, Ambassador Okoroigwe Chinonso, stated that their visit was to officially notify the Ministry of the emergence of the new leadership.",
+     date: "1st August, 2025",
+    image: "/images/women1.png",
+  },
+ {
+    title: "Ministry Holds Strategic Meeting with Orphanage Operators in Imo State",
+    description:
+      "Yesterday, a crucial meeting was held with operators of orphanage homes at the ministry’s hall, where the Commissioner emphasized the introduction of stringent measures to curb sharp practices in the sector. The homes were cautioned to operate strictly within the legal framework guiding orphanage activities in the state.",
+    date: "30th July, 2025",
+    image: "/images/women2.png"
   },
   {
-    title: "The Imo State House of Assembly has pledged its support to the Ministry of Women Affairs and Social Welfare to put an end to social challenges in the state.",
-    description: "It also promised to help strengthen the sector and enhance its proficiency through legislative support. The commitment was made when the Assembly’s Committee on Women Affairs and Social Welfare interfaced with officials of the Ministry of Women Affairs and Social Welfare, led by the commissioner of the ministry, Ernest Ibejiako.",
-    date: "30th May 2025",
-    image: "/images/firstladymain.jpg",
+    title: "Imo First Lady Urges Women to Join 'Every Home A Garden' Competition",
+    description:
+      "In alignment with the First Lady of Nigeria, Senator Oluremi Tinubu’s Renewed Hope Initiative – Plant A-Garden program, the First Lady of Imo State, Chief (Dr) Chioma Uzodimma, is calling on all Imo women to participate in the 'Every Home A Garden' competition. This initiative is part of her commitment to promoting food security and women empowerment across the state.",
+    date: "29th July, 2025",
+    image: "/images/rhi.png"
   },
-  {
-    title: "IIRS AND MINISTRY OF WOMEN AFFAIRS AND SOCIAL WELFARE UNITE TO BOOST SOCIAL PROGRAMS",
-    description: "The Chairman of the Imo State Internal Revenue Service (IIRS), Mr. Justice Okoye, and his team visited the Commissioner for Women Affairs and Social Welfare, Rt. Hon. Chief Ibejiako Ifeanyi Ernest on Tuesday 12th November 2024.",
-    date: "30th May 2025",
-    image: "/images/IMSG-Logo.svg"
-  },
+
+
 ];
 
 export default function LatestNewsSection() {
@@ -42,11 +47,13 @@ export default function LatestNewsSection() {
                 priority={idx === 0}
               />
             </div>
+            <AnimatedSection>
             <div className="p-6 flex flex-col flex-1">
               <h3 className="font-bold text-lg md:text-xl text-gray-900 mb-2 tracking-tight uppercase">{item.title}</h3>
               <p className="text-gray-500 text-base mb-6">{item.description}</p>
               <div className="mt-auto font-bold text-black text-base">{item.date}</div>
             </div>
+              </AnimatedSection>
           </div>
         ))}
       </div>

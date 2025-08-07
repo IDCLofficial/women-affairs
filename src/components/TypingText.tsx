@@ -3,9 +3,9 @@
 import { useEffect, useState } from 'react';
 
 const sentences = [
-    "Empowering Women and Girls Across Imo State",
-    "Promoting Gender Equality and Social Inclusion",
-    "Building Stronger Communities Through Advocacy and Support"
+    "Motivating Girls",
+    "Promoting Gender Inclusivity",
+    "Building Stronger Communities"
 ];
 
 export function TypingText() {

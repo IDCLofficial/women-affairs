@@ -24,7 +24,7 @@ export default function AboutMandateSection({
   return (
 <section className={`relative w-full p-8 py-20 bg-[url('/images/gradient.png')] bg-no-repeat bg-cover shadow-lg overflow-hidden`}>
       
-      <div className="w-[94%] mx-auto">
+      <div className="w-[98%] mx-auto">
         {/* top section */}
         <div className="px-3 animate-bounce py-2 mb-3 bg-white text-gray-900 rounded-full font-semibold text-sm shadow-lg w-fit">
           {label}

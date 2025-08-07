@@ -16,10 +16,11 @@ export default function Services() {
             
             {/* CTASection */}
             <CTASection
-                heading="Contact Us"
-                buttonLabel="Contact Us"
-                buttonHref="/contact"
-            />
+                   heading="Join Us in Empowering Women and Promoting Social Justice"
+                   subtext="Be part of our mission to create an inclusive, equitable, and supportive Imo State for all women, children, and vulnerable groups."
+                   buttonLabel="Contact Us"
+                   buttonHref="/contact-us"
+                 />
             {/* Footer */}
             <Footer />
         </div>

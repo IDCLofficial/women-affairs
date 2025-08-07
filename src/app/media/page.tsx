@@ -9,47 +9,43 @@ import Footer from "@/components/Footer";
 
 const mediaItems = [
   {
-    image: "/images/women1.jpg",
-    title: "Women's Empowerment Workshop - Imo State",
+    image: "/images/women1.png",
+    title: "Girl's Guild Visit",
     isVideo: false,
   },
   {
-    image: "/images/women7.jpg",
+    image: "/images/women2.png",
     title: "Girls in STEM Initiative Launch",
     isVideo: false,
   },
   {
-    image: "/images/women3.jpg",
+    image: "/images/wom1.png",
     title: "Gender Equality Advocacy Seminar",
-    isVideo: true,
+    isVideo: false,
   },
   {
-    image: "/images/women4.jpg",
+    image: "/images/women4.png",
     title: "Community Health Outreach for Women",
     isVideo: false,
   },
   {
-    image: "/images/women5.jpg",
+    image: "/images/women3.png",
     title: "International Women's Day Celebration",
-    isVideo: true,
-  },
-  {
-    image: "/images/women6.jpg",
-    title: "Women in Leadership Forum",
     isVideo: false,
   },
+ 
   {
-    image: "/images/women7.jpg",
+    image: "/images/depart1.png",
     title: "Entrepreneurship Training for Women",
     isVideo: false,
   },
   {
-    image: "/images/women8.jpg",
+    image: "/images/depart2.png",
     title: "Press Release: New Gender Policy Announced",
     isVideo: false,
   },
   {
-    image: "/images/women9.jpg",
+    image: "/images/ini2.png",
     title: "Empowering Rural Women Initiative",
     isVideo: false,
   },

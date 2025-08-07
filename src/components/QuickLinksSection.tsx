@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import AnimatedSection from "./AnimatedSection";
 
 const links = [
   {
@@ -23,7 +24,7 @@ const links = [
   {
     title: "Departments",
     description: "Learn about our departments and their activities.",
-    image: "/images/women1.jpg",
+    image: "/images/women4.png",
     href: "/departments",
   },
 ];
@@ -48,9 +49,15 @@ export default function QuickLinksSection() {
               />
             </div>
             <div className="bg-white w-full rounded-b-xl p-3 md:p-6 flex flex-col gap-3 md:gap-4 mt-0 md:mt-4 z-10">
+            <AnimatedSection>
               <h3 className="text-base md:text-2xl font-bold text-gray-900 leading-tight">{link.title}</h3>
+                </AnimatedSection>
               <div className="flex flex-col md:flex-row items-start justify-between mt-2 gap-2 md:gap-0">
+            <AnimatedSection>
+
                 <p className="text-gray-500 text-xs md:text-base leading-relaxed">{link.description}</p>
+                </AnimatedSection>
+              
                 <a
                   href={link.href}
                   className="mt-2 md:mt-0 ml-0 md:ml-4 bg-green-600 rounded w-8 h-8 min-w-[48px] flex-shrink-0 flex items-center justify-center text-white hover:bg-green-700 transition-transform duration-150 shadow-md focus:outline-none focus:ring-2 focus:ring-green-400 text-center"
@@ -60,6 +67,7 @@ export default function QuickLinksSection() {
                     <path d="M7 15l5-5-5-5" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                   </svg>
                 </a>
+
               </div>
             </div>
           </div>

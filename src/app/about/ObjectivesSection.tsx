@@ -1,4 +1,4 @@
-import AnimatedSection2 from "../../components/AnimatedSection2";
+import AnimatedSection from "../../components/AnimatedSection";
 
 export const ObjectivesSection = () => {
     const objectives = [
@@ -47,7 +47,7 @@ export const ObjectivesSection = () => {
                     </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         {objectives.map((objective, index) => (
-                            <AnimatedSection2 key={index} delay={0.2}>
+                            <AnimatedSection key={index} delay={0.2}>
                             <div className="bg-white p-6 rounded-lg border border-gray-200 shadow-md text-center">
                                 <h3 className="font-medium text-[22px] mb-3">
                                     {objective.title}
@@ -56,7 +56,7 @@ export const ObjectivesSection = () => {
                                     {objective.description}
                                 </p>
                             </div>
-                            </AnimatedSection2>
+                            </AnimatedSection>
                         ))}
                     </div>
                 </div>

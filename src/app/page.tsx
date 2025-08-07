@@ -19,7 +19,7 @@ export default function Home() {
         backgroundImage="/images/Homehero.jpg"
         overlayText="Imo State Ministry of Women Affairs and Social Welfare"
         heading="Empowering Women. "
-        subheading="Promoting Social Welfare."
+        subheading=""
         description="Empowering women, advancing social welfare, and supporting Imo citizens — through inclusive policies, advocacy, and community programs."
       />
       {/* About Mandate Section */}
@@ -34,12 +34,12 @@ Established through the restructuring of former women affairs, social welfare, a
 "
         buttonText="Discover More"
         image1="/images/womenfirst.jpg"
-        image2="/images/women7.jpg"
+        image2="/images/ini2.png"
       />
 
       {/* Commissioner Section */}
       <CommissionerSection
-        imageSrc="/images/commisioner.png"
+        imageSrc="/images/commisioner1.png"
         imageAlt="Honourable Lady Nkechinyere Ugwu, Minister of Women Affairs and Social Welfare in Imo State"
         title="About The Commissioner"
         bio="Honourable Lady Nkechinyere Ugwu hails from Ideato South Local Government Area of Imo State, Nigeria, and is a distinguished figure in the realm of public service, particularly in areas concerning gender equality and social justice. With years of dedicated service, she has established herself as a powerful advocate for women’s empowerment, child protection, and the upliftment of vulnerable populations across the state. Her work spans grassroots initiatives aimed at equipping women with vocational skills, creating access to financial support, and advocating for their rightful inclusion in political and economic spaces."

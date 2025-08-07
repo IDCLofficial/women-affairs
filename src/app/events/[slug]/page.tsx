@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import { TopHero } from "@/components/TopHero";
 
 const event = {
-  title: "Imo State Gender-Based Violence (GBV) Awareness and Prevention Summit 2025",
+  title: "Community Leaders Zonal GBV Training",
   img: "/images/unwomen.png",
   date: "25 November 2025",
   time: "10:00 am - 3:00 pm",
@@ -18,11 +18,11 @@ const event = {
     "The Imo State Gender-Based Violence (GBV) Awareness and Prevention Summit 2025 brings together community leaders, advocates, policymakers, and the public to address the urgent issue of gender-based violence. The summit will feature keynote addresses from government officials and experts, interactive workshops on prevention strategies, survivor support, and legal frameworks, as well as panel discussions on community engagement and advocacy. Attendees will have the opportunity to network, share experiences, and collaborate on actionable solutions to end GBV in Imo State. The event aims to raise awareness, foster partnerships, and empower communities to create a safer, more inclusive society for all.",
 };
 
-const speakers = Array(4).fill({
+const speakers = [{
   name: "Hon. Commissioner Lady Nkechi Ugwu",
   role: "Lead Speaker",
   img: "/images/commisioner.png",
-});
+}];
 
 function Countdown({ targetDate }: { targetDate: string }) {
   const [timeLeft, setTimeLeft] = useState<{days: number, hours: number, minutes: number, seconds: number}>({days: 0, hours: 0, minutes: 0, seconds: 0});

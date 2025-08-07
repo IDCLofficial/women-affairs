@@ -6,10 +6,10 @@ const contactInfo = {
   email: "imostatemgvg@gmail.com",
   phone: "unavailable",
   socials: [
-    { icon: <FaFacebookF />, href: "#" },
-    { icon: <FaTwitter />, href: "#" },
-    { icon: <FaInstagram />, href: "#" },
-    { icon: <FaLinkedinIn />, href: "#" },
+    { icon: <FaFacebookF />, href: "https://www.facebook.com/imostatemwa" },
+    { icon: <FaTwitter />, href: "https://x.com/imostatemwa" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/imostatemwa?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" },
+  
   ],
 };
 
