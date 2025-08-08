@@ -12,7 +12,7 @@ const event = {
   date: "25 November 2025",
   time: "10:00 am - 3:00 pm",
   organizer: "Ministry of Women Affairs and Social Welfare, Imo State",
-  phone: "Nil",
+  phone: "090 000 666 78",
   address: "Owerri Conference Center, Imo State",
   description:
     "The Imo State Gender-Based Violence (GBV) Awareness and Prevention Summit 2025 brings together community leaders, advocates, policymakers, and the public to address the urgent issue of gender-based violence. The summit will feature keynote addresses from government officials and experts, interactive workshops on prevention strategies, survivor support, and legal frameworks, as well as panel discussions on community engagement and advocacy. Attendees will have the opportunity to network, share experiences, and collaborate on actionable solutions to end GBV in Imo State. The event aims to raise awareness, foster partnerships, and empower communities to create a safer, more inclusive society for all.",
@@ -48,27 +48,27 @@ function Countdown({ targetDate }: { targetDate: string }) {
   }, [targetDate]);
 
   return (
-    <div className="bg-green-700 text-white rounded-lg px-8 py-4 flex gap-6 items-center text-center w-max mt-4 mb-6 md:mb-0 md:absolute md:bottom-6 md:right-10 shadow-lg">
-      <div>
-        <div className="text-2xl font-bold">{timeLeft.days}</div>
-        <div className="text-xs uppercase">Days</div>
-      </div>
-      <div className="text-2xl font-bold">:</div>
-      <div>
-        <div className="text-2xl font-bold">{timeLeft.hours}</div>
-        <div className="text-xs uppercase">Hours</div>
-      </div>
-      <div className="text-2xl font-bold">:</div>
-      <div>
-        <div className="text-2xl font-bold">{timeLeft.minutes}</div>
-        <div className="text-xs uppercase">Minutes</div>
-      </div>
-      <div className="text-2xl font-bold">:</div>
-      <div>
-        <div className="text-2xl font-bold">{timeLeft.seconds}</div>
-        <div className="text-xs uppercase">Seconds</div>
-      </div>
+    <div className="bg-green-700 text-white rounded-lg px-4 md:px-8 py-4 flex gap-6 items-center text-center w-[96%] md:w-max mt-4 mb-6 md:mb-0 md:absolute md:bottom-6 md:right-10 shadow-lg">
+    <div>
+      <div className="text-sm md:text-2xl font-bold">{timeLeft.days}</div>
+      <div className="text-xs uppercase">Days</div>
     </div>
+    <div className="text-sm md:text-2xl font-bold">:</div>
+    <div>
+      <div className="text-sm md:text-2xl font-bold">{timeLeft.hours}</div>
+      <div className="text-xs uppercase">Hrs</div>
+    </div>
+    <div className="text-sm md:text-2xl font-bold">:</div>
+    <div>
+      <div className="text-sm md:text-2xl font-bold">{timeLeft.minutes}</div>
+      <div className="text-xs uppercase">Mins</div>
+    </div>
+    <div className="text-sm md:text-2xl font-bold">:</div>
+    <div>
+      <div className="text-sm md:text-2xl font-bold">{timeLeft.seconds}</div>
+      <div className="text-xs uppercase">Secs</div>
+    </div>
+  </div>
   );
 }
 
