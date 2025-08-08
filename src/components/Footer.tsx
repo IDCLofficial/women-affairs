@@ -55,8 +55,8 @@ const info = {
             href: "/"
         },
         {
-            label: "",
-            href: ""
+            label: "+2348037327105",
+            href: "tel:+2348037327105"
         },  
         {
             label: "imostatemgvg@gmail.com",
