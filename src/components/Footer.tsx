@@ -23,8 +23,8 @@ const info = {
             href: "/services"
         },
         {
-            label:"Units",     
-            href: "/units"
+            label:"Departments",     
+            href: "/departments"
         },
         {
             label: "Events",
