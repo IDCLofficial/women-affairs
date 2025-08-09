@@ -23,8 +23,8 @@ const info = {
             href: "/services"
         },
         {
-            label: "Departments",     
-            href: "/departments"
+            label:"Units",     
+            href: "/units"
         },
         {
             label: "Events",
@@ -58,10 +58,10 @@ const info = {
             label: "+2348037327105",
             href: "tel:+2348037327105"
         },  
-        {
-            label: "imostatemgvg@gmail.com",
-            href: "mailto:imostatemgvg@gmail.com"
-        },
+        // {
+        //     label: "imostatemgvg@gmail.com",
+        //     href: "mailto:imostatemgvg@gmail.com"
+        // },
     ]
 }
 
@@ -84,7 +84,7 @@ export default function Footer() {
         icon: "success",
         title: "Subscribed!",
         text: "You’ve successfully joined our newsletter.",
-        confirmButtonColor: "#16a34a"
+        confirmButtonColor: "green"
       });
       setEmail("");
     } else {
