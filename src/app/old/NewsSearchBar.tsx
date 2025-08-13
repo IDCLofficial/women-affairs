@@ -3,11 +3,16 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-import { NewsItem } from './newsData';
+// Move newsList here or import from a shared location
+const newsList = [
+  {
+    title: "Minister, First Lady, and UN Women Lead GBV Training for Community Leaders",
+    description: "The Ministry, alongside Imo First Lady and UN Women, conducted a 3‑day zonal training for President‑Generals in Owerri, Orlu and Okigwe on preventing Gender‑Based Violence at the grassroots level.",
+    date: "10th July 2025",
+    image: "/images/firstladymain.jpg",
+  }
+];
 
-interface NewsSearchBarProps {
-  newsList: NewsItem[];
-}
 
 function slugify(text: string) {
   return text
@@ -16,7 +21,7 @@ function slugify(text: string) {
     .replace(/(^-|-$)+/g, '');
 }
 
-export default function NewsSearchBar({ newsList }: NewsSearchBarProps) {
+export default function NewsSearchBar() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState(newsList);
   const [showSuggestions, setShowSuggestions] = useState(false);
@@ -51,12 +56,13 @@ export default function NewsSearchBar({ newsList }: NewsSearchBarProps) {
     setShowSuggestions(false);
   }
 
-  // Reset search when newsList changes
   useEffect(() => {
-    setQuery("");
-    setResults(newsList);
-    setShowSuggestions(false);
-  }, [newsList]);
+    return () => {
+      setQuery("");
+      setResults(newsList);
+      setShowSuggestions(false);
+    };
+  }, []);
 
   return (
     <div className="w-full flex flex-col items-center py-8 bg-white relative">
