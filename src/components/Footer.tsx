@@ -25,8 +25,8 @@ const info = {
             href: "/services"
         },
         {
-            label:"Units",     
-            href: "/units"
+            label:"Departments",     
+            href: "/departments"
         },
         {
             label: "Events",
@@ -60,10 +60,10 @@ const info = {
             label: "+2348037327105",
             href: "tel:+2348037327105"
         },  
-        // {
-        //     label: "imostatemgvg@gmail.com",
-        //     href: "mailto:imostatemgvg@gmail.com"
-        // },
+         {
+             label: "info.imoministryofwomenaffairs@gmail.com",
+             href: "mailto:info.imoministryofwomenaffairs@gmail.com"
+         },
     ]
 }
 
