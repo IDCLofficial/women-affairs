@@ -10,7 +10,7 @@ module.exports = {
       host : '3.134.82.51',
       ref  : 'origin/main',
       repo : 'git@github.com:IDCLofficial/women-affairs.git',
-      path : 'home/ubuntu',
+      path : '/home/ubuntu',
       'pre-deploy-local': '',
       'post-deploy' : 'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.js --env production',
       'pre-setup': '',
