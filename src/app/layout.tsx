@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     description: 'Official website of the Imo State Ministry of Women Affairs and Social Welfare',
     images: [
       {
-        url: 'https://womenaffairs.im.gov.ng/public/images/IMSG-Logo.svg',
+        url: 'https://womenaffairs.im.gov.ng/images/IMSG-Logo.svg',
         width: 800,
         height: 630,
         alt: 'Imo State Ministry of Women Affairs',
