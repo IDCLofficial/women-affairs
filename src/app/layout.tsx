@@ -10,24 +10,24 @@ import GlobalLoader from '@/components/GlobalLoader'
 // optimized metadata for seo
 export const metadata: Metadata = {
   title: {
-    default: 'Imo State Ministry of WomenAffairs',
-    template: '%s | Imo State Ministry of WomenAffairs'
+    default: 'Imo State Ministry of Women Affairs and Social Welfare',
+    template: '%s | Imo State Ministry of Women Affairs and Social Welfare'
   },
-  description: 'Official website of the Imo State Ministry of WomenAffairs - providing services, information, and support for women across Imo State, Nigeria.',
-  keywords: ['Imo State WomenAffairs', 'Ministry of WomenAffairs', 'WomenAffairs Nigeria', 'WomenAffairs Services Imo'],
+  description: 'Official website of the Imo State Ministry of Women Affairs - providing services, information, and support for women across Imo State, Nigeria.',
+  keywords: ['Imo State Women Affairs', 'Ministry of Women Affairs', 'Women Affairs Nigeria', 'Women Affairs Services Imo'],
   openGraph: {
     type: 'website',
     locale: 'en_NG',
     url: 'https://womenaffairs.im.gov.ng/',
-    siteName: 'Imo State Ministry of WomenAffairs',
-    title: 'Imo State Ministry of WomenAffairs',
-    description: 'Official website of the Imo State Ministry of WomenAffairs',
+    siteName: 'Imo State Ministry of Women Affairs and Social Welfare',
+    title: 'Imo State Ministry of Women Affairs and Social Welfare',
+    description: 'Official website of the Imo State Ministry of Women Affairs and Social Welfare',
     images: [
       {
-        url: 'https://womenaffairs.im.gov.ng/images/IMSG-Logo.svg',
-        width: 1200,
+        url: 'https://womenaffairs.im.gov.ng/public/images/IMSG-Logo.svg',
+        width: 800,
         height: 630,
-        alt: 'Imo State Ministry of WomenAffairs',
+        alt: 'Imo State Ministry of Women Affairs',
       }
     ],
   },
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google:'U5rZOFb23XWMBmSdhhZaxAxPxfMqdQPXo-LyXsNVOKk',
+    google: "_7c1t_i-UsjS1_BD_kE-vsXMUak-mgMUnIT91dEUEQ4" 
   },
 }
 
