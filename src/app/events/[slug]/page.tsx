@@ -11,7 +11,6 @@ import { TopHero } from "@/components/TopHero";
 // Interface for Event data
 interface Event {
   date: string;
-  contactPhoneNumber?: string; // Made optional since it's not in the Contentful data
   location: string;
   title: string;
   description: string;
@@ -180,7 +179,6 @@ export default function EventDetailPage() {
                 hour12: true
               })
             }</span></div>
-            <div><span className="font-semibold">PHONE:</span> <span className="ml-2">{event.contactPhoneNumber}</span></div>
           </div>
         </section>
         {/* Speakers */}

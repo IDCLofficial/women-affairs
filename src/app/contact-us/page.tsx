@@ -1,6 +1,5 @@
 import React from "react";
 import ContactInfoSection from "./ContactInfoSection";
-import ContactFormSection from "./ContactFormSection";
 import ContactImageSection from "./ContactImageSection";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
@@ -16,14 +15,8 @@ export default function ContactUsPage() {
             <div className="flex-1">
               <ContactInfoSection />
             </div>
-            <div className="hidden md:flex flex-1 justify-center items-start absolute right-0 z-5">
-              <ContactFormSection />
-            </div>
         </div>
         <ContactImageSection />
-        <div className="md:hidden">
-          <ContactFormSection />
-        </div>
       </section>
       <CTASection
         heading="Join Us in Empowering Women and Promoting Social Justice"

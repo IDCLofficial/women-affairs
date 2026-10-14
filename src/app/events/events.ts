@@ -47,7 +47,6 @@ export const getEventsFromContentful = async (ministryId: string = process.env.N
       details: event.fields?.fullDescription || event.fields?.briefDescription || 'No details available',
       dateString: event.fields?.eventDate || event.sys?.createdAt || new Date().toISOString(),
       id: event.sys?.id || '',
-      contactPhoneNumber: event.fields?.contactPhoneNumber || '+234 803 123 4567', // Default phone number
       firstSpeaker: event.fields?.firstSpeaker,
       firstSpeakerPicture: event.fields?.firstSpeakerPicture,
       secondSpeaker: event.fields?.secondSpeaker,
