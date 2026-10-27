@@ -4,11 +4,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import GlobalLoader from '@/components/GlobalLoader'
+import { buildRootMetadata, jsonLd, organizationJsonLd } from "@/lib/seo";
 
 
 
 // optimized metadata for seo
-export const metadata: Metadata = {
+const baseMetadata: Metadata = {
   title: {
     default: 'Imo State Ministry of Women Affairs and Social Welfare',
     template: '%s | Imo State Ministry of Women Affairs and Social Welfare'
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     locale: 'en_NG',
     url: 'https://womenaffairs.im.gov.ng/',
     siteName: 'Imo State Ministry of Women Affairs and Social Welfare',
-    title: 'Imo State Ministry of Women Affairs and Social Welfare',
+    title: 'Imo State Ministry of Women Affairs & Social Welfare and Social Welfare',
     description: 'Official website of the Imo State Ministry of Women Affairs and Social Welfare',
     images: [
       {
@@ -47,6 +48,9 @@ export const metadata: Metadata = {
   },
 }
 
+export const metadata = buildRootMetadata(baseMetadata);
+
+
 
 export default function RootLayout({
   children,
@@ -56,6 +60,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(organizationJsonLd) }} />
         <GlobalLoader/>
         <Navbar/>
         {children}

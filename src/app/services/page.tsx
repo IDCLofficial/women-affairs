@@ -2,6 +2,14 @@ import CTASection from "../../components/CTASection";
 import Footer from "../../components/Footer";
 import { TopHero } from "@/components/TopHero";
 import ServiceCard from "./ServiceCard";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Services",
+  description: "Services offered by the Ministry of Women Affairs & Social Welfare of the Imo State Government.",
+  path: "/services",
+});
+
 
 export default function Services() {
     return (

@@ -8,6 +8,14 @@ import Stats from "@/components/Stats";
 import FeaturedPartners from "@/components/FeaturedPartners";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: { absolute: "Ministry of Women Affairs & Social Welfare | Imo State Government" },
+  description: "Official website of the Ministry of Women Affairs & Social Welfare, Imo State Government: services, departments, projects, news and events.",
+  path: "/",
+});
+
 
 export default function Home() {
   return (

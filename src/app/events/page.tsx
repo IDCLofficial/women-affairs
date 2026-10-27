@@ -2,6 +2,14 @@ import EventsListSection from "./EventsListSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import { TopHero } from "@/components/TopHero";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "Events",
+  description: "Events organised by the Ministry of Women Affairs & Social Welfare, Imo State Government.",
+  path: "/events",
+});
+
 
 export default function EventsPage() {
   return (

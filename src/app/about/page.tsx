@@ -6,6 +6,14 @@ import Footer from "../../components/Footer";
 import { TopHero } from "@/components/TopHero";
 import MissionVisionCard from "@/app/about/MissionVisionCard";
 import TeamPage from "./Team";
+import { pageMetadata } from "@/lib/seo";
+
+export const metadata = pageMetadata({
+  title: "About Us",
+  description: "About the Ministry of Women Affairs & Social Welfare of the Imo State Government: who we are and what we do.",
+  path: "/about",
+});
+
 
 export default function AboutUs() {
     return (
