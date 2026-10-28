@@ -11,8 +11,8 @@ import Footer from "@/components/Footer";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: { absolute: "Ministry of Women Affairs & Social Welfare | Imo State Government" },
-  description: "Official website of the Ministry of Women Affairs & Social Welfare, Imo State Government: services, departments, projects, news and events.",
+  title: { absolute: "Imo State Ministry of Women Affairs and Social Welfare" },
+  description: "Women's empowerment, social welfare and protection, child welfare and rights, and shelter and referral services in Imo State.",
   path: "/",
 });
 

@@ -5,8 +5,8 @@ import ServiceCard from "./ServiceCard";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Services",
-  description: "Services offered by the Ministry of Women Affairs & Social Welfare of the Imo State Government.",
+  title: "Women Empowerment, Social Welfare and Child Protection",
+  description: "Gender equality and women's empowerment, social welfare and protection, child welfare and rights, shelter and referral services and grants in Imo State.",
   path: "/services",
 });
 

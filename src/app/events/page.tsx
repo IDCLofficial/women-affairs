@@ -6,7 +6,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Events",
-  description: "Events organised by the Ministry of Women Affairs & Social Welfare, Imo State Government.",
+  description: "Events organised by the Ministry of Women Affairs and Social Welfare, Imo State Government.",
   path: "/events",
 });
 

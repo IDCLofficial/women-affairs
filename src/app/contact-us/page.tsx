@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Contact Us",
-  description: "Contact the Ministry of Women Affairs & Social Welfare, Imo State Government: office location and ways to reach the ministry.",
+  description: "Contact the Ministry of Women Affairs and Social Welfare, Imo State Government: office location and ways to reach the ministry.",
   path: "/contact-us",
 });
 
